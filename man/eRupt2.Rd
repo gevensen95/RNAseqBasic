@@ -4,7 +4,7 @@
 \alias{eRupt2}
 \title{Plots a Volcano Plot}
 \usage{
-eRupt2(results, alpha = 0.05, FCsig = 1, Gene = "Gene")
+eRupt2(results, alpha = 0.05, FCsig = 1, geneID = "Gene")
 }
 \arguments{
 \item{results}{Dataframe of results}
@@ -13,7 +13,7 @@ eRupt2(results, alpha = 0.05, FCsig = 1, Gene = "Gene")
 
 \item{FCsig}{Fold change value for significance}
 
-\item{Gene}{Column for labeling genes}
+\item{geneID}{Column for labeling genes}
 }
 \value{
 A dataframe of Ensembl IDs, gene symbols, and any additional

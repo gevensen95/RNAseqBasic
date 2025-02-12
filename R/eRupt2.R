@@ -5,12 +5,12 @@
 #' @param results Dataframe of results
 #' @param alpha alpha value for significance
 #' @param FCsig Fold change value for significance
-#' @param Gene Column for labeling genes
+#' @param geneID Column for labeling genes
 #' @return A dataframe of Ensembl IDs, gene symbols, and any additional
 #' attributes (if chosen)
 #' @export
 
-eRupt2 <- function(results, alpha = 0.05, FCsig = 1, Gene = 'Gene'){
+eRupt2 <- function(results, alpha = 0.05, FCsig = 1, geneID = 'Gene'){
 
   #colour significance by p-adj:
   results$significance <- "NS"
@@ -31,7 +31,7 @@ eRupt2 <- function(results, alpha = 0.05, FCsig = 1, Gene = 'Gene'){
     Ol_Reliable()+
     ggplot2::scale_y_continuous( limits=c(0, (-log10(min_val)+(-log10(min_val)*0.1))) )+
     ggplot2::theme(legend.title = ggplot2::element_blank())+
-    ggrepel::geom_text_repel(ggplot2::aes(label=ifelse(label, Gene, "")), size=2, max.overlaps = Inf)+
+    ggrepel::geom_text_repel(ggplot2::aes(label=ifelse(label, geneID, "")), size=2, max.overlaps = Inf)+
     ggplot2::scale_color_manual(values=c("blue","black","red"), drop=F)
 
   return(plot)
