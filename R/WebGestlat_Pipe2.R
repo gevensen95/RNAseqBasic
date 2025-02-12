@@ -14,7 +14,7 @@
 #' @return A dataframe of Ensembl IDs, gene symbols, and any additional
 #' attributes (if chosen)
 #' @export
-WebGestalt_Pipe <- function(mode="ORA", results, alpha=0.05, FC=0.5, DB=NULL,
+WebGestalt_Pipe2 <- function(mode="ORA", results, alpha=0.05, FC=0.5, DB=NULL,
                             species="mmusculus", projectName=NULL,
                             geneID='Gene', outputTerms=100){
 
