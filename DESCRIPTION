@@ -11,4 +11,3 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Depends: R (>= 2.10), biomaRt (>= 2.56.1), WebGestaltR (>= 0.4.6)
-Remotes: katlande/RNAseq_Functions
