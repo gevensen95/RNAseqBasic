@@ -2,4 +2,5 @@
 
 export(WebGestalt_Pipe2)
 export(convert_ensembl_to_symbol)
+export(convert_gene_names)
 export(eRupt2)
